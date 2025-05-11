@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram + Ton Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="telegram-app">
+        <div class="header">
+            Telegram + Ton Connect
+        </div>
+
+        <div class="content">
+            <h2>Connect TON Wallet</h2>
+            <p>Link your TON wallet to use Telegram Web3 features</p>
+
+            <button id="tonConnectBtn" class="ton-connect-btn">
+                <i class="fab fa-telegram"></i> Connect Wallet
+            </button>
+
+            <div id="walletInfo" class="wallet-info">
+                <h3>Connected Wallet</h3>
+                <p id="walletAddress" class="wallet-address"></p>
+                <button id="disconnectBtn" style="margin-top: 10px;">Disconnect</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            Powered by TON Blockchain
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
